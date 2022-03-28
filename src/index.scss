@@ -9,13 +9,12 @@
 
 body {
   font-family: "Lato", sans-serif;
-  /* font-weight: 300; */
-  color: $primary-text-color;
+  color: $grayscale-40;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
-  color: $primary-text-color;
+  color: $grayscale-70;
 }

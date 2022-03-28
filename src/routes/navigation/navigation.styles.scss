@@ -8,7 +8,7 @@
   .nav-container {
     margin: 0 auto;
     width: inherit;
-    max-width: 1260px;
+    max-width: $container-max-width;
     height: inherit;
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,7 @@
         &::after {
           content: "";
           position: absolute;
-          bottom: 10px;
+          bottom: 0px;
           left: 0;
           right: 0;
           margin: auto;
@@ -65,7 +65,12 @@
         }
 
         &:hover {
+          transition: color 0.25s ease-in;
           color: $nav-link-hover-color;
+          -webkit-transition: color 0.25s ease-in;
+          -moz-transition: color 0.25s ease-in;
+          -ms-transition: color 0.25s ease-in;
+          -o-transition: color 0.25s ease-in;
         }
       }
     }

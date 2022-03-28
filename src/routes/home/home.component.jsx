@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
 
+import Hero from "../../components/hero/hero.component";
+
 import "./home.styles.scss";
 
 const Home = () => {
   return (
     <div className="homepage-container">
-      <h1>This is the Home Page</h1>
+      <Hero />
       <Outlet />
     </div>
   );
