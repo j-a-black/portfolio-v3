@@ -1,33 +1,32 @@
 @import "../../sass-styles/variables";
 
 .hero-container {
+  margin: 0 auto;
   width: 100%;
+  max-width: $container-max-width;
   height: 70vh;
+  // border: 1px solid #ccc;
+  background-image: url("../../assets/images/hero.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
-  .hero-image-container {
+  .hero-content-container {
     margin: 0 auto;
     width: inherit;
-    max-width: $container-max-width;
+    // max-width: $container-max-width;
     height: inherit;
 
-    .parallelogram {
+    .hero-image {
       border: 1px solid #ccc;
-      width: 200px;
-      height: 200px;
-      overflow: hidden;
-      transform: skew(-20deg);
-      -webkit-transform: skew(-20deg);
-      -moz-transform: skew(-20deg);
-      -ms-transform: skew(-20deg);
-      -o-transform: skew(-20deg);
-    }
-
-    .top-image {
-      transform: skew(20deg);
-      -webkit-transform: skew(20deg);
-      -moz-transform: skew(20deg);
-      -ms-transform: skew(20deg);
-      -o-transform: skew(20deg);
+      // background-image: url("../../assets/images/pic1.png");
+      // background-position: center;
+      // background-repeat: no-repeat;
+      // background-size: cover;
+      // position: relative;
+      width: 100%;
+      height: 400px;
     }
   }
 }
