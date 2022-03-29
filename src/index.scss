@@ -14,6 +14,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  margin-bottom: 16px;
+}
+
 a {
   text-decoration: none;
   color: $grayscale-70;

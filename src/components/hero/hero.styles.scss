@@ -1,32 +1,39 @@
 @import "../../sass-styles/variables";
 
 .hero-container {
+  border-bottom: 1px solid #ccc;
   margin: 0 auto;
   width: 100%;
-  max-width: $container-max-width;
-  height: 70vh;
-  // border: 1px solid #ccc;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url("../../assets/images/hero.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
-  .hero-content-container {
+  .hero-text-container {
     margin: 0 auto;
+    padding: 0 10px;
     width: inherit;
-    // max-width: $container-max-width;
-    height: inherit;
+    max-width: $container-max-width;
+    height: auto;
+    color: $mahogany;
+    text-align: center;
 
-    .hero-image {
-      border: 1px solid #ccc;
-      // background-image: url("../../assets/images/pic1.png");
-      // background-position: center;
-      // background-repeat: no-repeat;
-      // background-size: cover;
-      // position: relative;
-      width: 100%;
-      height: 400px;
+    h1 {
+      font-weight: 400;
+      margin-bottom: 16px;
+      letter-spacing: 0.75px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 24px;
     }
   }
 }

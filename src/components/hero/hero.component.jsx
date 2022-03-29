@@ -3,14 +3,12 @@ import "./hero.styles.scss";
 const Hero = () => {
   return (
     <section className="hero-container">
-      <div className="hero-content-container">
-        <div className="hero-text-container">
-          <h1>
-            Jason Black. <br />
-            Front-End Web Developer
-          </h1>
-          <p>I make websites using HTML, CSS, JavaScript, and React</p>
-        </div>
+      <div className="hero-text-container">
+        <h1>
+          Jason Black. <br />
+          Front-End Web Developer
+        </h1>
+        <p>I make websites using HTML, CSS, JavaScript, and React</p>
       </div>
     </section>
   );
