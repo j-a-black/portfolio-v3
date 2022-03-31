@@ -8,7 +8,7 @@ const Hero = () => {
           Jason Black. <br />
           Front-End Web Developer
         </h1>
-        <p>I make websites using HTML, CSS, JavaScript, and React</p>
+        <p>I make responsive websites using HTML, CSS, JavaScript, and React</p>
       </div>
     </section>
   );
