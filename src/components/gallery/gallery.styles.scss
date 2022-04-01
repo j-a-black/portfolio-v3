@@ -8,94 +8,19 @@
   height: auto;
 
   .section-title {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 0.75px;
     text-align: center;
+    color: $mahogany;
   }
 
   .gallery-grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 425px));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 425px));
     justify-content: center;
     grid-gap: 16px;
-  }
-
-  .gallery-item {
-    border: 1px solid $grayscale-80;
-    width: 100%;
-    max-width: 425px;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-
-    img {
-      //   border: 1px solid green;
-      width: inherit;
-      max-width: inherit;
-    }
-
-    .content-container {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      opacity: 0;
-
-      &:hover {
-        transition: all 0.2s ease-in;
-        opacity: 1;
-        background-color: white;
-        -webkit-transition: all 0.2s ease-in;
-        -moz-transition: all 0.2s ease-in;
-        -ms-transition: all 0.2s ease-in;
-        -o-transition: all 0.2s ease-in;
-      }
-
-      .text-box {
-        text-align: center;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        h3 {
-          font-size: 18px;
-          margin: 16px 0;
-        }
-
-        p {
-          font-size: 14px;
-        }
-      }
-
-      .link-button {
-        border: 1px solid transparent;
-        width: 110%;
-        height: 50px;
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 12.5px 0;
-
-        &:hover {
-          transition: all 0.2s ease-in;
-          color: black;
-          background-color: white;
-          border: 1px solid $grayscale-80;
-          -webkit-transition: all 0.2s ease-in;
-          -moz-transition: all 0.2s ease-in;
-          -ms-transition: all 0.2s ease-in;
-          -o-transition: all 0.2s ease-in;
-        }
-      }
-    }
   }
 }
 
