@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 
+import Footer from "../../components/footer/footer.component";
 import Hero from "../../components/hero/hero.component";
 import Gallery from "../../components/gallery/gallery.component";
 
@@ -8,9 +9,12 @@ import "./home.styles.scss";
 const Home = () => {
   return (
     <div className="homepage-container">
-      <Hero />
-      <Gallery />
-      <Outlet />
+      <main>
+        <Hero />
+        <Gallery />
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
 };

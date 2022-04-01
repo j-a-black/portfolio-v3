@@ -22,7 +22,7 @@ export const projectsQuicklookData = [
   {
     id: 3,
     header: "Brochure Website",
-    description: "Brochure Website",
+    description: "Landing page for a fictitious catering company (React)",
     imgSrc: Brochure,
     imgAlt: "Brochure Website",
     href: "https://oceansidecatering.jasonanthonblack.com/",
