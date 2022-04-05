@@ -14,7 +14,6 @@ const Home = () => {
         <Gallery />
         <Outlet />
       </main>
-      <Footer />
     </div>
   );
 };
