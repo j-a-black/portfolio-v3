@@ -1,1 +1,23 @@
 @import "../../sass-styles/variables";
+
+.menu-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $container-max-width;
+  height: auto;
+}
+
+.menu {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 350px));
+  justify-content: center;
+
+  .menu-item {
+    border: 1px solid green;
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+}
