@@ -8,6 +8,7 @@ import "./projects.styles.scss";
 const Projects = () => {
   return (
     <div className="projects-page-container">
+      <h1>Projects</h1>
       <Menu />
     </div>
   );
