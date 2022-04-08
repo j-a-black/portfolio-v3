@@ -1,4 +1,4 @@
-const MenuList = ({ header, onMenuClick, menuItemSelected }) => {
+const MenuItem = ({ header, onMenuClick, menuItemSelected }) => {
   return (
     <>
       <li
@@ -15,4 +15,4 @@ const MenuList = ({ header, onMenuClick, menuItemSelected }) => {
   );
 };
 
-export default MenuList;
+export default MenuItem;
