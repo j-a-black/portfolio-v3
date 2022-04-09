@@ -17,17 +17,17 @@
     font-weight: 300;
     line-height: 28px;
 
+    * {
+      margin-bottom: 16px;
+    }
+
     .sub-header {
       color: $mahogany;
-      margin: 16px 0;
+      margin: 32px 0;
     }
 
     .indent-list-items {
       padding-left: 50px;
-    }
-
-    p::after {
-      content: "";
     }
   }
 }
