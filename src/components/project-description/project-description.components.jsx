@@ -1,11 +1,20 @@
 import "./project-description.styles.scss";
 
+import LinkButton from "../link-button/link-button.component";
 import { projectsQuicklookData } from "../../data/data";
 import mealifyImgUrl from "../../assets/images/mealify.png";
 
 const ProjectDescription = () => {
   return (
     <section className="section-container">
+      <LinkButton
+        styleClassName="project-link-button"
+        linkButtonText="View Project"
+      />
+      <LinkButton
+        styleClassName="project-link-button"
+        linkButtonText="View GitHub"
+      />
       <img src={mealifyImgUrl} alt="website" />
       <div className="text-box">
         <h2 className="sub-header">Purpose and Objectives</h2>

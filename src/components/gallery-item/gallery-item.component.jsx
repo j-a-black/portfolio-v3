@@ -13,17 +13,10 @@ const GalleryItem = ({ header, description, imgSrc, imgAlt, href }) => {
         <LinkButton
           styleClassName="link-button"
           href={href}
+          linkButtonText="View Demo"
           target="_blank"
           rel="noopener noreferrer"
         />
-        {/* <a
-          className="link-button"
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Demo
-        </a> */}
       </div>
     </div>
   );

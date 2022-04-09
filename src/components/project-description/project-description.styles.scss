@@ -7,6 +7,29 @@
   max-width: $project-description-container-max-width;
   height: auto;
 
+  .project-link-button {
+    border: 1px solid black;
+    display: block;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 16px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      transition: all 0.2s ease-in;
+      color: $mahogany;
+      background-color: white;
+      border: 1px solid $grayscale-80;
+      -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+    }
+  }
+
   .inline-link {
     color: $mahogany;
     font-weight: 400;

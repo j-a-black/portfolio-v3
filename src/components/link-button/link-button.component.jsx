@@ -1,10 +1,15 @@
 import "./link-button.styles.scss";
 
-const LinkButton = ({ styleClassName, href, ...otherProps }) => {
+const LinkButton = ({
+  styleClassName,
+  href,
+  linkButtonText,
+  ...otherProps
+}) => {
   return (
     <>
       <a className={styleClassName} href={href} {...otherProps}>
-        View Demo
+        {linkButtonText}
       </a>
     </>
   );
