@@ -1,3 +1,5 @@
+import "./menu-item.styles.scss";
+
 const MenuItem = ({ header, onMenuClick, menuItemSelected }) => {
   return (
     <>

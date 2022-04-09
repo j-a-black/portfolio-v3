@@ -12,24 +12,4 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 350px));
   justify-content: center;
-
-  .menu-item {
-    // border: 1px solid green;
-    border-bottom: 2px solid transparent;
-    list-style: none;
-    text-align: center;
-    padding: 16px 0;
-    cursor: pointer;
-
-    &:hover {
-      // border-bottom: 2px solid $mahogany;
-      background-color: $grayscale-97;
-    }
-  }
-
-  .active-bottom-border {
-    border-bottom: 2px solid $mahogany;
-    color: $mahogany;
-    font-weight: 700;
-  }
 }

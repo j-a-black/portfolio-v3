@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import MenuList from "../../components/menu-list/menu-list.component";
-import Footer from "../../components/footer/footer.component";
+import ProjectDescription from "../../components/project-description/project-description.components";
 
 import { projectsQuicklookData } from "../../data/data";
 import "./projects.styles.scss";
@@ -21,6 +21,7 @@ const Projects = () => {
         menuItemSelected={menuItemSelected}
         onMenuClick={onMenuClick}
       />
+      <ProjectDescription />
     </div>
   );
 };

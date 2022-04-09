@@ -1,0 +1,33 @@
+@import "../../sass-styles/variables";
+
+.section-container {
+  margin: 0 auto;
+  padding: $container-all-sides-padding;
+  width: 100%;
+  max-width: $project-description-container-max-width;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid $grayscale-80;
+  }
+
+  .text-box {
+    font-weight: 300;
+    line-height: 28px;
+
+    .sub-header {
+      color: $mahogany;
+      margin: 16px 0;
+    }
+
+    .indent-list-items {
+      padding-left: 50px;
+    }
+
+    p::after {
+      content: "";
+    }
+  }
+}

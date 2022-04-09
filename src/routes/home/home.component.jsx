@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 
-import Footer from "../../components/footer/footer.component";
 import Hero from "../../components/hero/hero.component";
 import Gallery from "../../components/gallery/gallery.component";
 
