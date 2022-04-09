@@ -12,6 +12,7 @@ const ProjectDescription = () => {
         <p>
           The purpose of this project was to explore how to use the{" "}
           <a
+            className="inline-link"
             href="https://www.themealdb.com/api.php"
             target="_blank"
             rel="noopener noreferrer"
