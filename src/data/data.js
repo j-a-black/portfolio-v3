@@ -1,3 +1,5 @@
+import LinkButton from "../components/link-button/link-button.component";
+
 import Mealify from "../assets/images/mealify.png";
 import Brochure from "../assets/images/brochure.png";
 import Shoppe from "../assets/images/shoppe.png";
@@ -10,11 +12,14 @@ export const projectsQuicklookData = [
     imgSrc: Mealify,
     imgAlt: "Recipe Search App",
     href: "https://cupboard.jasonanthonblack.com/",
+    github: "https://github.com/j-a-black/cupboard-cra",
     content: [
+      <img src={Mealify} alt="Recipe Search App" />,
       <h2 className="sub-header">Purpose and Objectives</h2>,
       <p>
         The purpose of this project was to explore how to use the{" "}
         <a
+          className="inline-link"
           alt="The Meal Database"
           href="https://www.themealdb.com/api.php"
           target="_blank"
@@ -67,6 +72,22 @@ export const projectsQuicklookData = [
         to push the object properties into an array, and then mapped the
         ingredients – as well as the quantity/measurements – individually.
       </p>,
+      <div>
+        <LinkButton
+          styleClassName="project-link-button"
+          href="https://cupboard.jasonanthonblack.com/"
+          linkButtonText="View Project"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+        <LinkButton
+          styleClassName="project-link-button"
+          href="https://github.com/j-a-black/cupboard-cra"
+          linkButtonText="View GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+      </div>,
     ],
   },
   {
@@ -76,6 +97,80 @@ export const projectsQuicklookData = [
     imgSrc: Shoppe,
     imgAlt: "Shopping Cart",
     href: "https://shoppe.jasonanthonblack.com/",
+    github: "https://github.com/j-a-black/shoppe-v2",
+    content: [
+      <img src={Shoppe} alt="Shopping Cart" />,
+      <h2>Purpose and Objectives</h2>,
+      <p>
+        The purpose of this project was to explore how to traverse the DOM,
+        update and delete information within a shopping, and to craft a website
+        layout based on a landing page design. My objectives were to:
+      </p>,
+      <ol className="indent-list-items">
+        <li>
+          Add items to the cart by utilizing for loops to iterate through a
+          collection of class names and adding event listeners
+        </li>
+        <li>
+          Remove items from the cart by developing a familiarity with selecting
+          a parent element and removing all children nodes
+        </li>
+        <li>Utilize open source for website layout designs</li>
+      </ol>,
+      <h2>Challenges</h2>,
+      <p>
+        Running a for loop that displays the numbers one through 10 is very
+        straight forward compared to using a for loop to iterate through a
+        collection of class names, then adding event listeners to each element,
+        and subsequently using a high order function – like the addEventListener
+        – to pass another function as an argument. This required research, trial
+        and error, and plenty of console logs.
+      </p>,
+      <p>
+        This process alone was very important to understand as it played an
+        instrumental role in adding items to a cart, removing items from a cart,
+        and updating the total price.
+      </p>,
+      <p>
+        Website design was derived from{" "}
+        <a
+          className="inline-link"
+          alt="Emporium Pies"
+          href="https://emporiumpies.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Emporium Pies
+        </a>{" "}
+        and{" "}
+        <a
+          className="inline-link"
+          alt="Mah Ze Dahr"
+          href="https://mahzedahrbakery.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Mah Ze Dahr
+        </a>
+        .
+      </p>,
+      <div>
+        <LinkButton
+          styleClassName="project-link-button"
+          href="https://shoppe.jasonanthonblack.com/"
+          linkButtonText="View Project"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+        <LinkButton
+          styleClassName="project-link-button"
+          href="https://github.com/j-a-black/shoppe-v2"
+          linkButtonText="View GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+      </div>,
+    ],
   },
   {
     id: 3,
@@ -84,5 +179,59 @@ export const projectsQuicklookData = [
     imgSrc: Brochure,
     imgAlt: "Brochure Website",
     href: "https://oceansidecatering.jasonanthonblack.com/",
+    github: "https://github.com/j-a-black/seaside-catering-cra",
+    content: [
+      <img src={Brochure} alt="Brochure Website" />,
+      <h2>Purpose and Objectives</h2>,
+      <p>
+        The purpose of this project was to become familiar with React by
+        creating a simple landing page for a fictitious catering company. My
+        objectives were to:
+      </p>,
+      <ol className="indent-list-items">
+        <li>Develop a basic understanding of components</li>
+        <li>
+          Develop a basic understanding of passing props to child components
+        </li>
+        <li>Develop a basic understanding of hooks</li>
+        <li>Use hooks to toggle mobile menu </li>
+      </ol>,
+      <p>
+        {" "}
+        This webpage will continue to develop and additional content will be
+        added, but for the time being, the landing page will be the only content
+        presented.{" "}
+      </p>,
+
+      <p>
+        Website design was derived from{" "}
+        <a
+          className="inline-link"
+          alt="The Highland Kitchen"
+          href="https://www.thehighlandkitchen.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          The Highland Kitchen
+        </a>
+        .
+      </p>,
+      <div>
+        <LinkButton
+          styleClassName="project-link-button"
+          href="https://oceansidecatering.jasonanthonblack.com/"
+          linkButtonText="View Project"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+        <LinkButton
+          styleClassName="project-link-button"
+          href="https://github.com/j-a-black/seaside-catering-cra"
+          linkButtonText="View GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+      </div>,
+    ],
   },
 ];

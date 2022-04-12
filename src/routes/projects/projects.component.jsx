@@ -21,7 +21,10 @@ const Projects = () => {
         menuItemSelected={menuItemSelected}
         onMenuClick={onMenuClick}
       />
-      <ProjectDescription />
+      <ProjectDescription
+        projectsQuicklookData={projectsQuicklookData}
+        menuItemSelected={menuItemSelected}
+      />
     </div>
   );
 };

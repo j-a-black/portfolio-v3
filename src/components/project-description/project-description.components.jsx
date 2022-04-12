@@ -1,21 +1,16 @@
 import "./project-description.styles.scss";
 
-import LinkButton from "../link-button/link-button.component";
-import { projectsQuicklookData } from "../../data/data";
-import mealifyImgUrl from "../../assets/images/mealify.png";
+import ProjectItem from "../project-item/project-item.component";
 
-const ProjectDescription = () => {
+const ProjectDescription = ({ projectsQuicklookData, menuItemSelected }) => {
   return (
     <section className="section-container">
-      <LinkButton
-        styleClassName="project-link-button"
-        linkButtonText="View Project"
-      />
-      <LinkButton
-        styleClassName="project-link-button"
-        linkButtonText="View GitHub"
-      />
-      <img src={mealifyImgUrl} alt="website" />
+      {projectsQuicklookData.map((project, index) => {
+        return menuItemSelected === project.header ? (
+          <ProjectItem key={index} projectContent={project.content} />
+        ) : null;
+      })}
+      {/* <img src={mealifyImgUrl} alt="website" />
       <div className="text-box">
         <h2 className="sub-header">Purpose and Objectives</h2>
         <p>
@@ -74,6 +69,16 @@ const ProjectDescription = () => {
           the ingredients – as well as the quantity/measurements – individually.
         </p>
       </div>
+      <div>
+        <LinkButton
+          styleClassName="project-link-button"
+          linkButtonText="View Project"
+        />
+        <LinkButton
+          styleClassName="project-link-button"
+          linkButtonText="View GitHub"
+        />
+      </div> */}
     </section>
   );
 };
