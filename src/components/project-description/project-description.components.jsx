@@ -10,7 +10,13 @@ const ProjectDescription = ({ projectsQuicklookData, menuItemSelected }) => {
           <ProjectItem key={index} projectContent={project.content} />
         ) : null;
       })}
-      {/* <img src={mealifyImgUrl} alt="website" />
+    </section>
+  );
+};
+
+export default ProjectDescription;
+
+/* <img src={mealifyImgUrl} alt="website" />
       <div className="text-box">
         <h2 className="sub-header">Purpose and Objectives</h2>
         <p>
@@ -78,9 +84,4 @@ const ProjectDescription = ({ projectsQuicklookData, menuItemSelected }) => {
           styleClassName="project-link-button"
           linkButtonText="View GitHub"
         />
-      </div> */}
-    </section>
-  );
-};
-
-export default ProjectDescription;
+      </div> */
