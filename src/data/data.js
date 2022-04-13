@@ -100,7 +100,7 @@ export const projectsQuicklookData = [
     github: "https://github.com/j-a-black/shoppe-v2",
     content: [
       <img src={Shoppe} alt="Shopping Cart" />,
-      <h2>Purpose and Objectives</h2>,
+      <h2 className="sub-header">Purpose and Objectives</h2>,
       <p>
         The purpose of this project was to explore how to traverse the DOM,
         update and delete information within a shopping, and to craft a website
@@ -117,7 +117,7 @@ export const projectsQuicklookData = [
         </li>
         <li>Utilize open source for website layout designs</li>
       </ol>,
-      <h2>Challenges</h2>,
+      <h2 className="sub-header">Challenges</h2>,
       <p>
         Running a for loop that displays the numbers one through 10 is very
         straight forward compared to using a for loop to iterate through a
@@ -182,7 +182,7 @@ export const projectsQuicklookData = [
     github: "https://github.com/j-a-black/seaside-catering-cra",
     content: [
       <img src={Brochure} alt="Brochure Website" />,
-      <h2>Purpose and Objectives</h2>,
+      <h2 className="sub-header">Purpose and Objectives</h2>,
       <p>
         The purpose of this project was to become familiar with React by
         creating a simple landing page for a fictitious catering company. My
