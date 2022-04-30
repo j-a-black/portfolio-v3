@@ -1,4 +1,5 @@
 @import "../../sass-styles/variables";
+@import "../../sass-styles/animations";
 
 .hero-container {
   border-bottom: 1px solid #ccc;
@@ -23,11 +24,23 @@
     color: $mahogany;
     text-align: center;
 
-    h1 {
+    .heading {
       font-size: 40px;
       font-weight: 400;
       margin-bottom: 16px;
       letter-spacing: 0.75px;
+
+      &-main {
+        display: block;
+        animation: moveInLeft 1s ease-out;
+        -webkit-animation: moveInLeft 1s ease-out;
+      }
+
+      &-sub {
+        display: block;
+        animation: moveInRight 1s ease-out;
+        -webkit-animation: moveInRight 1s ease-out;
+      }
     }
 
     p {
@@ -35,6 +48,8 @@
       font-weight: 300;
       letter-spacing: 1px;
       line-height: 24px;
+      animation: moveInBottom 1s ease-out;
+      -webkit-animation: moveInBottom 1s ease-out;
     }
   }
 }

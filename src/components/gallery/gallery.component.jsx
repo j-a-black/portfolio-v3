@@ -7,7 +7,7 @@ import "./gallery.styles.scss";
 
 const Gallery = () => {
   return (
-    <section className="gallery-container">
+    <section className="gallery-container move-in-from-bottom-animation">
       <h2 className="section-title">Projects: Quicklook</h2>
       <div className="gallery-grid-wrapper">
         {projectsQuicklookData.map((item) => {

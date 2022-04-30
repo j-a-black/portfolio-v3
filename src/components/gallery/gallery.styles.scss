@@ -7,6 +7,11 @@
   max-width: $container-max-width;
   height: auto;
 
+  &.move-in-from-bottom-animation {
+    animation: moveInBottom 2.5s ease-out;
+    -webkit-animation: moveInBottom 2.5s ease-out;
+  }
+
   .section-title {
     margin-bottom: 60px;
     font-size: 28px;
