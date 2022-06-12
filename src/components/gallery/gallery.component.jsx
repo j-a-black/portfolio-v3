@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import GalleryItem from "../gallery-item/gallery-item.component";
 
 import { projectsQuicklookData } from "../../data/data";

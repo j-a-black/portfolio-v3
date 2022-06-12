@@ -97,7 +97,7 @@ export const projectsQuicklookData = [
     imgSrc: Shoppe,
     imgAlt: "Shopping Cart",
     href: "https://shoppe.jasonanthonblack.com/",
-    github: "https://github.com/j-a-black/shoppe-v2",
+    github: "https://github.com/j-a-black/shoppe-cra-v4",
     content: [
       <img src={Shoppe} alt="Shopping Cart" />,
       <h2 className="sub-header">Purpose and Objectives</h2>,
@@ -164,7 +164,7 @@ export const projectsQuicklookData = [
         />
         <LinkButton
           styleClassName="project-link-button"
-          href="https://github.com/j-a-black/shoppe-v2"
+          href="https://github.com/j-a-black/shoppe-cra-v4"
           linkButtonText="View GitHub"
           target="_blank"
           rel="noopener noreferrer"
