@@ -1,78 +1,46 @@
 @import "../../sass-styles/variables";
 
-.gallery-item {
-  border: 1px solid $grayscale-80;
+.content {
   width: 100%;
-  // max-width: 425px;
   height: auto;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px 0;
+  border-bottom: 1px solid $mahogany;
 
-  img {
-    //   border: 1px solid green;
-    width: inherit;
-    max-width: inherit;
+  &:last-child {
+    border-bottom: none;
   }
 
-  .content-container {
-    position: absolute;
+  .content-picture {
+    width: 100%;
+    flex: 0 1 425px;
+    order: 1;
+  }
+
+  .content-text {
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0;
+    flex: 0 1 425px;
+    order: 2;
 
-    &:hover {
-      transition: all 0.2s ease-in;
-      opacity: 1;
-      background-color: white;
-      -webkit-transition: all 0.2s ease-in;
-      -moz-transition: all 0.2s ease-in;
-      -ms-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
+    h3 {
+      font-size: 18px;
+      margin: 16px 0;
+      color: $mahogany;
     }
 
-    .text-box {
-      text-align: center;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      h3 {
-        font-size: 18px;
-        margin: 16px 0;
-        color: $mahogany;
-      }
-
-      p {
-        font-size: 14px;
-      }
+    p {
+      padding-bottom: 16px;
+      font-weight: 300;
+      line-height: 28px;
     }
 
-    .link-button {
-      border: 1px solid transparent;
-      width: 110%;
-      height: 50px;
-      background-color: black;
-      color: white;
-      text-align: center;
-      padding: 12.5px 0;
-
-      &:hover {
-        transition: all 0.2s ease-in;
-        color: black;
-        background-color: white;
-        border: 1px solid $grayscale-80;
-        -webkit-transition: all 0.2s ease-in;
-        -moz-transition: all 0.2s ease-in;
-        -ms-transition: all 0.2s ease-in;
-        -o-transition: all 0.2s ease-in;
-      }
+    .skill-tag-color {
+      color: #e84393;
     }
   }
 }

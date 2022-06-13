@@ -17,6 +17,8 @@ const Gallery = () => {
               imgSrc={item.imgSrc}
               imgAlt={item.imgAlt}
               href={item.href}
+              github={item.github}
+              tech={item.tech}
             />
           );
         })}

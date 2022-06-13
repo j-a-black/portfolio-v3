@@ -1,14 +1,16 @@
 import LinkButton from "../components/link-button/link-button.component";
 
-import Mealify from "../assets/images/mealify.png";
-import Brochure from "../assets/images/brochure.png";
-import Shoppe from "../assets/images/shoppe.png";
+import Mealify from "../assets/images/mealify.webp";
+import Brochure from "../assets/images/brochure.webp";
+import Shoppe from "../assets/images/shoppe.webp";
 
 export const projectsQuicklookData = [
   {
     id: 1,
     header: "Recipe Search App",
-    description: "Search for recipes based on a single ingredient (React)",
+    tech: "HTML | CSS | Sass | JavaScript | React",
+    description:
+      "This application takes a single ingredient provided by the user and finds recipes that include the specified ingredient. A split screen layout is used to dynamically render recipe results and specific information such as ingredients, cooking instructions, and a link to a video with additional guidance. ",
     imgSrc: Mealify,
     imgAlt: "Recipe Search App",
     href: "https://cupboard.jasonanthonblack.com/",
@@ -93,7 +95,9 @@ export const projectsQuicklookData = [
   {
     id: 2,
     header: "Shopping Cart",
-    description: "Shopping Cart feature for a fictitious bakery (JS/ES6)",
+    tech: "HTML | CSS | Sass | JavaScript | React",
+    description:
+      "I created a shopping cart for a fictitious retail bakery that utilizes the web storage API. Users can add and remove products from the cart, adjust the quantities of products, and quickly view products through the landing page call to action. ",
     imgSrc: Shoppe,
     imgAlt: "Shopping Cart",
     href: "https://shoppe.jasonanthonblack.com/",
@@ -175,7 +179,8 @@ export const projectsQuicklookData = [
   {
     id: 3,
     header: "Brochure Website",
-    description: "Landing page for a fictitious catering company (React)",
+    tech: "HTML | CSS | Sass | JavaScript | React",
+    description: "Landing page for a fictitious private catering company.",
     imgSrc: Brochure,
     imgAlt: "Brochure Website",
     href: "https://oceansidecatering.jasonanthonblack.com/",

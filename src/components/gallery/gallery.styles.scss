@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: $container-all-sides-padding;
   width: 100%;
-  max-width: $container-max-width;
+  max-width: 925px;
   height: auto;
 
   &.move-in-from-bottom-animation {
@@ -22,10 +22,8 @@
   }
 
   .gallery-grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 425px));
-    justify-content: center;
-    grid-gap: 16px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
