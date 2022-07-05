@@ -3,10 +3,80 @@ import LinkButton from "../components/link-button/link-button.component";
 import Mealify from "../assets/images/mealify.webp";
 import Brochure from "../assets/images/brochure.webp";
 import Shoppe from "../assets/images/shoppe.webp";
+import Dashboard from "../assets/images/dashboard.webp";
 
 export const projectsQuicklookData = [
   {
     id: 1,
+    header: "Covid-19 Statistic Dashboard",
+    tech: "HTML | CSS | Sass | JavaScript | React",
+    description:
+      "This application is a map dashboard that shows statistics and geographic information about Covid-19. ",
+    imgSrc: Dashboard,
+    imgAlt: "Covid-19 Statistic Dashboard",
+    href: "https://dashboard.jasonanthonblack.com/",
+    github: "https://github.com/j-a-black/cupboard-cra",
+    content: [
+      <img src={Dashboard} alt="Covid-19 Statistic Dashboard" />,
+      <h2 className="sub-header">Purpose and Objectives</h2>,
+      <p>
+        The purpose of this project was to create a map dashboard that shows
+        statistics and geographic information about COVID-19. My objectives were
+        to:
+      </p>,
+      <ol className="indent-list-items">
+        <li>
+          Learn and utilize React Leaflet, an open-source map, to show the
+          number of reported cases for each country
+        </li>
+        <li>
+          Compare the country statistics to the number of cases in the entire
+          world
+        </li>
+        <li>
+          Learn and utilize React ChartJS, a popular charting library, to
+          display the number of reported cases and deaths within the past
+          30-days
+        </li>
+        <li>
+          Learn and utilize Semantic UI, a front-end development framework
+          similar to bootstrap designed for theming
+        </li>
+      </ol>,
+      <h2 className="sub-header">Challenges</h2>,
+      <p>
+        In order to visually represent the data, I needed to learn about React
+        Leaflet and React ChartJS. The documentation for both libraries is
+        decent; however, it required a few days to properly display the data
+        derived from the APIs. Additionally, I sought to learn Axios, a
+        promise-based HTTP client for the browser, as an alternative means to
+        fetching multiple API endpoints from both Worldometers and John Hopkins
+        University Center for Systems Science and Engineering.
+      </p>,
+      <p>
+        This project served to incrementally increase complexity by
+        incorporating different libraries and making multiple API calls.
+      </p>,
+      <div>
+        <LinkButton
+          styleClassName="project-link-button"
+          href="https://dashboard.jasonanthonblack.com/"
+          linkButtonText="View Project"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+        <LinkButton
+          styleClassName="project-link-button"
+          href="https://github.com/j-a-black/map-statistics-dashboard"
+          linkButtonText="View GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+      </div>,
+    ],
+  },
+  {
+    id: 2,
     header: "Recipe Search App",
     tech: "HTML | CSS | Sass | JavaScript | React",
     description:
@@ -93,7 +163,7 @@ export const projectsQuicklookData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     header: "Shopping Cart",
     tech: "HTML | CSS | Sass | JavaScript | React",
     description:
@@ -177,7 +247,7 @@ export const projectsQuicklookData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     header: "Brochure Website",
     tech: "HTML | CSS | Sass | JavaScript | React",
     description: "Landing page for a fictitious private catering company.",

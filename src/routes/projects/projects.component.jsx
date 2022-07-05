@@ -7,7 +7,9 @@ import { projectsQuicklookData } from "../../data/data";
 import "./projects.styles.scss";
 
 const Projects = () => {
-  const [menuItemSelected, setMenuItemSelected] = useState("Recipe Search App");
+  const [menuItemSelected, setMenuItemSelected] = useState(
+    "Covid-19 Statistic Dashboard"
+  );
 
   const onMenuClick = (event) => {
     setMenuItemSelected(event.target.innerText);
